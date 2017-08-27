@@ -2,7 +2,7 @@
 
 Steps to get started
 
-Assuming you have all these liste below installed: Node.js with NPM, Angular-CLI (Command Line Interface), Cordova, Ionic,
+Assuming you have all these listed below installed: Node.js with NPM, Angular-CLI (Command Line Interface), Cordova, Ionic,
 you can proceed with the followings steps
 
 1. Clone repository
