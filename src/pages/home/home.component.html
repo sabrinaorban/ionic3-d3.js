@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Dashboard
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <div class="padding_helper" color="white" (click)="cardTapped($event, forecasts)">
+    <div class="category__image">
+        <div class="text-center image__padding">
+          <p class="section__headline">{{ temp }}&deg;C</p>
+          <p class="nomargin category__headline">
+              {{ city }}
+          </p>
+        </div>
+    </div>
+  </div>
+ 
+</ion-content>
+

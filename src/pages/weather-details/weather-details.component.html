@@ -1,0 +1,12 @@
+<ion-header>
+    <ion-navbar>
+      <ion-title>
+        {{ forecast.location.name }}
+      </ion-title>
+    </ion-navbar>
+  </ion-header>
+  
+  <ion-content class="weather-details-view">
+    <line-diagram [stats]="forecast"></line-diagram>
+  </ion-content>
+  
