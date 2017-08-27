@@ -1,7 +1,7 @@
 {
-  "name": "simple-ionic-2-app",
+  "name": "ionic3-d3-js-app",
   "version": "0.0.1",
-  "author": "Kristoffer Andreasen",
+  "author": "Sabrina Orban",
   "homepage": "http://ionicframework.com/",
   "private": true,
   "scripts": {
