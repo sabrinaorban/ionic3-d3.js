@@ -1,5 +1,5 @@
 # Ionic 3 and d3.js
-This is a sample ionic 3 app with d3.js that makes a http call to a weather api and creates a line diagram out of the hourly weather array that I get from the weather API.
+This is a sample ionic 3 app with d3.js that take your current location and makes a http call to a weather api and creates a line diagram out of the hourly weather array that you get from the weather API.
 
 **Steps to get started:**
 
