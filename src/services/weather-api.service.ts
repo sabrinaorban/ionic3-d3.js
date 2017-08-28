@@ -8,9 +8,9 @@ export class WeatherApi {
 
   constructor(private http: Http) {}
 
-  getWeather(){
+  getWeather(city){
     return new Promise(resolve => {
-        this.http.get('http://api.apixu.com/v1/forecast.json?key='+ config.weatherApiKey + '&q=London')
+        this.http.get('http://api.apixu.com/v1/forecast.json?key='+ config.weatherApiKey + '&q=' + city)
           .subscribe(res => {
             resolve(res.json())
           });

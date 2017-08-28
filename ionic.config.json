@@ -1,6 +1,8 @@
 {
   "name": "Weather line diagram",
   "app_id": "d18aae7e",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "ionic-angular"
 }

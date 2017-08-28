@@ -2,6 +2,7 @@ import { NgModule, ErrorHandler } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
+import { AgmCoreModule } from '@agm/core';
 
 // Http import
 import { HttpModule } from '@angular/http';
@@ -20,6 +21,10 @@ import { WeatherApi } from '../services/weather-api.service';
 // Native imports
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { Geolocation } from '@ionic-native/geolocation';
+import { NativeGeocoder } from '@ionic-native/native-geocoder';
+import { LocationAccuracy } from '@ionic-native/location-accuracy';
+
 
 @NgModule({
   declarations: [
@@ -32,7 +37,10 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   imports: [
     BrowserModule,
     HttpModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyDp3qy7o0H83g6ZzqdPSAOgPUmWUrsOlYM'
+    })
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -47,7 +55,12 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     SplashScreen,
     WeatherApi,
     HttpModule,
+    Geolocation,
+    NativeGeocoder,
+    LocationAccuracy,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
+    
+
   ]
 })
 export class AppModule {}
